@@ -24,7 +24,7 @@ class BlockSchema(object):
         self.timestamp = hex_to_decimal(data['timestamp'])
         self.total_difficulty = hex_to_decimal(data['totalDifficulty'])
         self.transactions = []
-        self.transactions_root = hex_to_decimal(data['transactionsRoot'])
+        self.transactions_root = data['transactionsRoot']
         self.uncles = data['uncles']
 
         self.blockHeight = hex_to_decimal(data['number'])
